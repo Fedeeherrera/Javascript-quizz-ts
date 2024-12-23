@@ -1,16 +1,21 @@
 import { Container, Typography, Stack } from '@mui/material'
 import './App.css'
+import { JavaScriptLogo } from './JavaScriptLogo'
 
 function App() {
   return (
     <>
       <main>
-        <Container maxWidth='sm'>
-          <Typography variant='h2' component='h1'>
-            <Stack direction='row'>
-              <h1>JavaScript Quizz</h1>
-            </Stack>
-          </Typography>
+        <Container maxWidth="sm">
+          <Stack
+            direction="row"
+            gap={2}
+            alignItems="center"
+            justifyContent="center"
+          >
+            <JavaScriptLogo />
+            <Typography variant="h2" component="h1">JavaScript Quizz</Typography>
+          </Stack>
         </Container>
       </main>
     </>
