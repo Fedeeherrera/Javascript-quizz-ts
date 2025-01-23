@@ -22,9 +22,12 @@ const Question = ({ info }: { info: QuestionType }) => {
 
       <List sx={{ bgColor: '#333' }} disablePadding>
         {info.answers.map((answer, index) => (
-          <ListItem key={index}>
+          <ListItem key={index} divider>
             <ListItemButton>
-              <ListItemText primary={answer}></ListItemText>
+              <ListItemText
+                primary={answer}
+                sx={{ textAlign: 'center' }}
+              ></ListItemText>
             </ListItemButton>
           </ListItem>
         ))}
